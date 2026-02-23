@@ -1,0 +1,317 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #191919;
+    background-color: #fff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Intro section */
+.intro {
+    z-index: 1;
+    background-color: #fff;
+    border-bottom: 0.8px solid #33333340; 
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Typography */
+h1 {
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 0;      /* Fixed: Ensures identical vertical start to Light Mode */
+    margin-bottom: -8px;
+    background-color: transparent;
+}
+
+.subhead {
+    font-size: 12px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+/* Links */
+.modern-link {
+    text-underline-offset: 2px;
+    -webkit-text-decoration: underline #33333340;
+    text-decoration: underline #33333340;
+    text-decoration-thickness: 0.8px;
+    font-size: 12px;
+    color: #191919;
+    background-color: transparent;
+}
+
+.modern-link:hover {
+    color: #0070f3;
+}
+
+/* Footer */
+.footer {
+    max-width: 600px;
+    margin: 40px auto 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #888;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.footer-link:hover {
+    color: #0070f3;
+    text-decoration: underline;
+}
+
+/* Projects section */
+.projects {
+    max-width: 600px;
+    margin: 40px auto 80px;
+}
+
+.projects h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #191919;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* Project Cards */
+.project-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+    background-color: transparent;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.project-card h3 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #191919;
+    background-color: transparent;
+}
+
+.project-card .tools {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+    margin: 0;
+    background-color: transparent;
+}
+
+/* About Section Layout */
+.about {
+    max-width: 600px;
+    margin: 40px auto 80px;
+    padding: 0; 
+}
+
+.about h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #191919;
+    background-color: transparent;
+}
+
+.about p {
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #191919;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.about hr {
+    border: 0;
+    border-top: 0.8px solid #333333;
+    margin: 32px 0;
+}
+
+/* Experience, Education & Recognition */
+.experience, .education, .recognition {
+    margin-bottom: 32px;
+    background-color: transparent;
+}
+
+.experience h3, .education h3, .recognition h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #191919;
+    margin-bottom: 4px;
+    background-color: transparent;
+}
+
+.experience .date, .education .date {
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Project Details & Media */
+.project-detail {
+    max-width: 600px;
+    margin: 40px auto 80px;
+}
+
+.project-detail h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #191919;
+}
+
+.project-detail .description {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #191919;
+}
+
+.project-images, .project-media, .project-gif, .project-iframe {
+    max-width: 600px;
+    margin: 16px auto 24px;
+    text-align: center;
+}
+
+.project-images img, .project-media img, .project-gif img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    object-fit: cover;
+}
+
+.project-iframe iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #000;
+}
+
+/* Image Grid */
+/* Image Grid */
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 24px 0; /* Adds space above and below the grid */
+    padding: 0;
+    align-items: start; /* Ensures images align at the top of the row */
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto; /* Allows original height to shine through */
+    display: block;
+    border-radius: 8px;
+    object-fit: contain; /* Prevents any cropping or stretching */
+}
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.slideshow .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.slideshow .slide.active {
+    opacity: 1;
+}
+
+/* Responsive mobile adjustments */
+@media (max-width: 500px) {
+    .intro,
+    .projects,
+    .footer,
+    .project-detail,
+    .about {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%; /* Ensures container stays full width */
+    }
+
+    /* Force all image containers to be full width of the parent padding */
+    .project-images, 
+    .project-media, 
+    .project-gif, 
+    .project-iframe,
+    .image-grid {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    /* Ensure every image inside these containers behaves identically */
+    .project-images img, 
+    .project-media img, 
+    .project-gif img, 
+    .image-grid img {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .project-grid, .image-grid {
+        grid-template-columns: 1fr; /* Stacks everything in one uniform column */
+        gap: 20px; /* Consistent vertical spacing between stacked items */
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+}
